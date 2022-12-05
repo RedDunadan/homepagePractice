@@ -1,2 +1,2 @@
 # homepagePractice
-This is a practice a homepage creation
+This is a practice of a homepage creation
