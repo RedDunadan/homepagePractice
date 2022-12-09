@@ -1,0 +1,124 @@
+:root {
+    --heroColor: #1f2937;
+    --heroTextColor-primary: #f9faf8;
+    --heroTextColor-secondary: #e5e7eb;
+    --img-container: #636e81;
+    --button: #3882f6;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Roboto', Arial;
+}
+
+.header {
+    display: grid;
+    width: 100%;
+    height: 100px;
+    grid-template-columns: 25% 50%; 
+    grid-template-rows: 1fr; 
+    gap: 0px 25%; 
+    grid-template-areas: 
+        ". ."; 
+    height: 50px;
+    background-color: var(--heroColor);
+}
+
+.headerLogo {
+    display: flex;
+    color: var(--heroTextColor-primary);
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.headerLink {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+    font-size: 18px;
+}
+
+.headerLink a {
+    color: var(--heroTextColor-secondary);
+}
+
+.main-container {
+    background-color: var(--heroColor);
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 50px;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 12rem;
+}
+
+.left-container {
+    color: var(--heroTextColor-primary);
+    font-size: 48px;
+}
+
+.secondary-text {
+    color: var(--heroTextColor-secondary);
+    font-size: 18px;
+}
+
+.right-container {
+    background-color: var(--img-container);
+    padding: 15px;
+    width: auto;
+    height: 100%;
+    color: var(--heroTextColor-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background: var(--button);
+    border: none;
+    padding: 10px;
+    border-radius: 15px;
+    color: var(--heroTextColor-secondary);
+    width: 8rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.second-container {
+    background: var(--heroTextColor-primary);
+    width: auto;
+    height: 600px;
+    color: var(--heroColor);
+    font-size: 36px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.images-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.caja {
+    border: #3882f6;
+    border-radius: 5px;
+    background: var(--heroTextColor-secondary);
+}
